@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a0f597f-b285-4627-b22e-f6c3c76566d3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tracking-tools.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mAP" beforeDir="false" afterPath="$PROJECT_DIR$/mAP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mAP/howtoevaluatedetection.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mAP/howtoevaluatedetection.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tracking-tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,12 +30,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rename.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rename.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mAP/extra/rename.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="howtoevaluatedetection.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="howtoevaluatedetection.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mAP/howtoevaluatedetection.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
@@ -59,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="240" />
     <option name="y" value="135" />
     <option name="width" value="1440" />
@@ -140,7 +138,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -205,15 +203,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mAP/extra/rename.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mAP/howtoevaluatedetection.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mAP/extra/rename.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
