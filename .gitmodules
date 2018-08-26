@@ -1,0 +1,6 @@
+[submodule "mAP"]
+	path = mAP
+	url = https://github.com/Cartucho/mAP
+[submodule "py-motmetrics"]
+	path = py-motmetrics
+	url = https://github.com/cheind/py-motmetrics
