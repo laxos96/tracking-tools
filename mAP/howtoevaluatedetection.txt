@@ -1,0 +1,17 @@
+Obtienes el archivo .json de resultados de las detecciones de darkflow, con FLAGS.output = True.
+Ese archivo se copia a map-master/predicted.
+Lo transformas con el script convert_pred_darkflow_json.py y le cambias el nombre con mi script rename.py, ajustar números aquí.
+Copias la ground truth en formato .xml  a map-master/ground-truth y lo transformas con convert_gt_xml.py script.
+De ejecutar el programa obtienes los resultados en map-master/results.
+
+WORkFLOW:
+
+Copiar de UAV123_10fps/videos/darkflow_output los .json con los resultados de la detección a mAP/predicted.
+Copiar de TheVeryGoodDataset los .xml de la ground truth del vídeo a mAP/ground-truth.
+Ejecutar mAP/extra/convert_pred_darkflow_json.py para convertir json a txt.
+Ejecutar mAP/extra/rename.py para cambiar el nombre y que coincida con la ground truth.
+Ejecutar mAP/extra/convert_gt_xml.py para convertir xml a txt.
+Ejecutar mAP/extra/intersect-gt-and-pred.py para eliminar txt correspondiente a oclusiones que por tanto no tienen anotación.
+Ejecutar mAP/extra/remove_space.py para eliminar espacios de nombres de clases. Editar mAP/extra/class_list.txt y poner clases que te vayan dando error.
+Ejecutar main.py.
+Coger mAP/results y guardarlos en otro sitio, porque son sobreescritos con cada ejecución.
