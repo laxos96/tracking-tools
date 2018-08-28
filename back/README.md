@@ -105,10 +105,7 @@ Again, assuming this is a conda environment, execute in the cmd:
 No more libraries should be needed, since they have been installed as requisites of either Tensorflow or OpenCV 3.
 #### 2.6 Code
 Now, for the different parts of this repository, remember that each project has its own installation procedure. 
-After cloning this repository, the first step should be to initialize all submodules, and then proceed the instructions
-of each project.
 
-`git submodule update --init --recursive`
  
 - Tracking-with-darkflow: Check installation instructions inside Tracking-with-darkflow folder.
 
