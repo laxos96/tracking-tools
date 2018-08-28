@@ -1,13 +1,75 @@
-## Intro
+This is the repository for the code used in my Bachelor thesis '**UAV-based Object Tracker with a Convolutional
+Neural Network Detector and a Kalman Filter-Dynamic Association Tracker**', developed in the 'Aeronaves y Vehículos
+Espaciales' department of **Escuela Técnica Superior
+de Ingeniería Aeroespacial** (ETSIAE), a faculty of **Universidad Politécnica de Madrid**. 
 
-The purpose of this little project is to add object tracking to yolov2 and achieve real-time multiple object tracking.
+This repository is a collection of mostly open source code and some scripts developed by myself in order
+to understand, integrate and modify a Neural Network based Object Tracker, specifically targeting autonomous UAV
+person tracking.
 
-The current architecture is set to only track one type of objects, but it should be easy to generalise over all objects.
+The thesis is available in the file '**TFG.pdf**'
 
-Currently support people tracking (as the provided weights for deep_sort were trained on people tracking)
+# 1. Structure
 
-## Dependencies
+This repository contains the following different projects. While all of them are required to
+work with a dataset, train and evaluate performance, Tracking-with-darkflow is the main part providing
+the detection and tracking. Most of these projects were modified in some degree by me, so especific
+instructions are provided in each folder above of the original ones.
 
+- Tracking-with-darkflow - Forked from [bendidi](https://github.com/bendidi/Tracking-with-darkflow), 
+this repository integrates a Convolutional Neural Network Object Detector 
+([YOLO](https://pjreddie.com/darknet/yolo/), in its 
+[darkflow](https://github.com/thtrieu/darkflow) implementation) and a Neural Network Object Tracker,
+[Deep SORT](https://github.com/nwojke/deep_sort). Jointly, they provide amazingly fast multi object tracking
+while being simple to install and manipulate thanks to the Python implementation. 
+
+- mAP - Forked from [Cartucho](https://github.com/Cartucho/mAP), this repository offers a tool to compute the 
+accuracy of the Object Detection part, the mAP (mean Average Precision).
+
+- py-motmetrics - Forked from [cheind](https://github.com/cheind/py-motmetrics), this repository offers a tool to compute
+the accuracy of the Multi Object Tracking part, with a series of metrics compatible with the [MOT Challenge](https://motchallenge.net/) 
+
+- labelimg - From [tzutalin](https://github.com/tzutalin/labelImg), this software facilitates the manipulation of dataset annotations, and was extensively used in my thesis.
+For ease of installation it is not incorporated directly into this repository.
+
+- My scripts - A series of simple Python scripts designed to expedite handling of the large number of files typical from datasets.
+They are pretty rough. Further instructions in the My scripts folder. CHANGE
+
+# 2. Installation
+
+Each of the tools have their own installation procedure, but some independent software is needed first.
+- CUDA
+- CUDNN
+- Python 3.5
+- Tensorflow
+- OpenCV 3
+
+#### 2.1 CUDA 
+It is strongly recommended to use the GPU version of tensorflow, so first of all check that your GPU
+has a CUDA compute capability of at least 3.0. [Check here.](https://developer.nvidia.com/cuda-gpus) If affirmative,
+proceed to install CUDA following [NVIDIA official instructions](http://developer.download.nvidia.com/compute/cuda/9.0/Prod/docs/sidebar/CUDA_Quick_Start_Guide.pdf).
+Download link [here](https://developer.nvidia.com/cuda-90-download-archive).
+
+**IMPORTANT - CHECK THAT VERSION IS 9.0**
+
+Some versions of tensorflow were not compatible with CUDA versions following 9.0. This version will not give compatibility
+problems, as far as I know.
+
+#### 2.2 CUDNN
+Install CUDNN version 7.0 (again, for best compatibility) from [here](https://developer.nvidia.com/cudnn) (remember 
+that you need NVIDIA Developer Program membership, registration is simple).
+
+**IMPORTANT - CHECK THAT VERSION IS 7.0**
+
+#### 2.3 Python
+A Python 3.5 installation is required. This thesis was performed with an [Anaconda](https://www.anaconda.com/download/) 
+environment, but can done without it. 
+
+#### 2.4 Tensorflow
+ 
+ 
+ ### a
+   
     python
     numpy
     opencv 3
