@@ -44,6 +44,9 @@ Each of the tools has its own installation procedure, but some software is neede
 - Tensorflow
 - OpenCV 3
 
+Note that CUDA, CUDNN and Tensorflow are only required by Tracking-with-darflow, so if you intend
+to only use the other tools (to manage datasets or evaluate performance, for example) you do not need to
+install them.
 #### 2.1 CUDA 
 It is strongly recommended to use the GPU version of tensorflow, so first of all check that your GPU
 has a CUDA compute capability of at least 3.0. [Check here.](https://developer.nvidia.com/cuda-gpus) If affirmative,
@@ -116,7 +119,7 @@ Now, for the different parts of this repository, remember that each project has 
 - labelImg: Just download the latest version of this tool. Or stick 
 with [version 1.7.0](https://github.com/tzutalin/labelImg/releases/tag/v1.7.0), the one I used.
 
-- My Scripts: No installation is needed. 
+- My Scripts: No installation is needed, they are simple scripts. 
  
 ## License
 Each fork has its own license, all of them allowing free reproduction and modification but under different conditions
