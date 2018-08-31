@@ -4,3 +4,7 @@ idea/workspace.xml
 .idea/
 legacy/
 .pytest_cache/
+deep_sort/resources/networks/
+.weights
+darkflow/ckpt/
+sm-*
