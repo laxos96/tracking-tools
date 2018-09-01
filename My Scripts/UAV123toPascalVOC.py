@@ -21,7 +21,7 @@ def writeObject(clase, coord, file, idnumber):
 def writePascal(coord, xml_path, image_name, res, clase):
     """
     Input:
-        coordinates: PascalVOC format (xmin, ymin, xmax, ymax)
+        coord: PascalVOC format (xmin, ymin, xmax, ymax)
         xml_path: Path to file
         image_name: Name of the file, should be the same as the image of which is ground truth
         res: Tuple (image_width, image_height)
@@ -31,7 +31,7 @@ def writePascal(coord, xml_path, image_name, res, clase):
     """
 
     assert (coord[2] > coord[0] and coord[3] > coord[1]), "Bbox dimension error. Input must be in the format: (xmin, ymin, xmax, ymax)"
-    with open(xml_path,'w+') as f:
+    with open(xml_path, 'w+') as f:
         f.write('<annotation>\n')
         f.write('\t <filename>' + image_name + '</filename>\n')
         f.write('\t <size>\n')
@@ -45,7 +45,8 @@ def writePascal(coord, xml_path, image_name, res, clase):
 if __name__ == '__main__':
     """
     Converts an annotation file for a sequence in .txt format (as in the UAV123 dataset) to PascalVOC format.
-    Input annotation should be in format xmin, ymin, width, height
+    Input annotation should be in format xmin, ymin, width, height. Note: This script only supports one bounding box per
+    image.
     
     If converting UAV123 dataset, beware that each sequence usually has several annotation .txt. These should me merged,
     and the resulting file is what this script will convert. Some sequences may have one or two lines missing or in excess.

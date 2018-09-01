@@ -27,7 +27,7 @@ while being simple to install and manipulate thanks to the Python implementation
 accuracy of the Object Detection part, the mAP (mean Average Precision).
 
 - py-motmetrics - Forked from [cheind](https://github.com/cheind/py-motmetrics), this repository offers a tool to compute
-the accuracy of the Multi Object Tracking part, with a series of metrics compatible with the [MOT Challenge](https://motchallenge.net/) 
+the accuracy of the Multi Object Tracking part, with a series of metrics compatible with the [MOT Challenge](https://motchallenge.net/). 
 
 - labelimg - From [tzutalin](https://github.com/tzutalin/labelImg), this software facilitates the manipulation of dataset annotations, and was extensively used in my thesis.
 For ease of installation it is not incorporated directly into this repository.
