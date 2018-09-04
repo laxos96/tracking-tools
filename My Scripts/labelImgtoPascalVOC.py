@@ -3,6 +3,7 @@
 Created on Mon May 28 12:24:04 2018
 Coge anotaciones hechas en directorio ANN y las pasa a formato PASCAL VOC valido para training en darkflow
 en el path indicado en xml_path. Input en formato PASCAL VOC xml con o sin identidad.
+Necesario porque labelimg borra algunos atributos y para renombrar path y tal
 @author: Abraham
 
 MODUS OPERANDI:
